@@ -56,8 +56,40 @@
             background-color: #000;
             color: #fff;
         }
-
+        .btn-view {
+            background: brown;
+            color: #f0f0f0;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
         .rating {
             color: #f5c518;
             font-size: 0.9rem;
         }
+
+        /*third Card Item*/
+        .header {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .card{
+            border: 1px solid black;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            transition: transfrom 0.2s;
+        }
+        .card:hover{
+           transform: scale(1.02);
+        }
+        .checked{
+            color: orange;
+        }
+        .price .orginal {
+            text-decoration: line-through;
+            color: #888;
+            margin-right: 5px;
+        }
+        /*End third Card Item*/
