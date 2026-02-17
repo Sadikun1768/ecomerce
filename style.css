@@ -4,7 +4,9 @@
 }
 
 /*Navbar*/
-
+.navbar-nav {
+    color: white;
+}
 
 /* End Navbar*/
 .product-card {
@@ -111,6 +113,13 @@
             color: #333;
         }
         /*Quick Links*/
+        /*icon*/
+       
+        .icon i:hover{
+            color: rgb(5, 87, 87);
+            background: #985f09;
+        }
+        /*icon*/
 
 
 
