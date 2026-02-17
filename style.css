@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
 }
+
+/*Navbar*/
+
+
+/* End Navbar*/
 .product-card {
             position: relative;
             border: 1px solid #eee;
@@ -93,3 +98,23 @@
             margin-right: 5px;
         }
         /*End third Card Item*/
+
+        /*footer*/
+
+
+        /*Quick Links*/
+        .btn-dark:hover{
+            background: white;
+            color: #000;
+        }
+        .link p:hover{
+            color: #333;
+        }
+        /*Quick Links*/
+
+
+
+
+
+
+        /*End footer*/
