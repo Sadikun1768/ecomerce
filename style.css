@@ -122,7 +122,23 @@
         /*icon*/
 
         /*End footer*/
-        /*Swiper*/
 
-       
+        /*Swiper*/
+    .mySwiper {
+      height: 100px;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+    .mySwiper .swiper-slide {
+      width: 150px;
+      height: 100px;
+   
+     
+    }
+    .swiper-slide img {
+      display: flex;
+      width: 150px;
+      height: 100px;
+      
+    }
         /*End Swiper*/
