@@ -1,144 +1,151 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
 /*Navbar*/
 .navbar-nav {
-    color: white;
+  color: white;
 }
 
 /* End Navbar*/
 .product-card {
-            position: relative;
-            border: 1px solid #eee;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.2s;
-        }
+  position: relative;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
 
-        .product-card:hover {
-            transform: scale(1.02);
-        }
+.product-card:hover {
+  transform: scale(1.02);
+}
 
-        .badge-discount {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: green;
-            color: white;
-            padding: 2px 8px;
-            border-radius: 5px;
-            font-size: 0.9rem;
-        }
+.badge-discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: green;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
 
-        .badge-code {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background-color: #f0f0f0;
-            color: #333;
-            padding: 2px 6px;
-            border-radius: 5px;
-            font-size: 0.8rem;
-        }
+.badge-code {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
 
-        .sold-count {
-            color: green;
-            font-weight: 600;
-        }
+.sold-count {
+  color: green;
+  font-weight: 600;
+}
 
-        .price {
-            font-weight: bold;
-        }
+.price {
+  font-weight: bold;
+}
 
-        .price .original {
-            text-decoration: line-through;
-            color: #990c0c;
-            margin-right: 5px;
-        }
+.price .original {
+  text-decoration: line-through;
+  color: #990c0c;
+  margin-right: 5px;
+}
 
-        .btn-order {
-            width: 100%;
-            background-color: #000;
-            color: #fff;
-        }
-        .btn-view {
-            background: brown;
-            color: #f0f0f0;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        .rating {
-            color: #f5c518;
-            font-size: 0.9rem;
-        }
+.btn-order {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+.btn-view {
+  background: brown;
+  color: #f0f0f0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.rating {
+  color: #f5c518;
+  font-size: 0.9rem;
+}
 
-        /*third Card Item*/
-        .header {
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        .card{
-            border: 1px solid black;
-            border-radius: 10px;
-            position: relative;
-            overflow: hidden;
-            transition: transfrom 0.2s;
-        }
-        .card:hover{
-           transform: scale(1.02);
-        }
-        .checked{
-            color: orange;
-        }
-        .price .orginal {
-            text-decoration: line-through;
-            color: #888;
-            margin-right: 5px;
-        }
-        /*End third Card Item*/
+/*third Card Item*/
+.header {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.card {
+  border: 1px solid black;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transfrom 0.2s;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.checked {
+  color: orange;
+}
+.price .orginal {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 5px;
+}
+/*End third Card Item*/
 
-        /*footer*/
+/*footer*/
 
+/*Quick Links*/
+.btn-dark:hover {
+  background: white;
+  color: #000;
+}
+.link p:hover {
+  color: #333;
+}
+/*Quick Links*/
+/*icon*/
 
-        /*Quick Links*/
-        .btn-dark:hover{
-            background: white;
-            color: #000;
-        }
-        .link p:hover{
-            color: #333;
-        }
-        /*Quick Links*/
-        /*icon*/
-       
-        .icon i:hover{
-            color: rgb(5, 87, 87);
-            background: #985f09;
-        }
-        /*icon*/
+.icon i:hover {
+  color: rgb(5, 87, 87);
+  background: #985f09;
+}
+/*icon*/
 
-        /*End footer*/
+/*End footer*/
 
-        /*Swiper*/
-    .mySwiper {
-      height: 100px;
-      box-sizing: border-box;
-      padding: 10px 0;
-    }
-    .mySwiper .swiper-slide {
-      width: 150px;
-      height: 100px;
-   
-     
-    }
-    .swiper-slide img {
-      display: flex;
-      width: 150px;
-      height: 100px;
-      
-    }
-        /*End Swiper*/
+/*Swiper*/
+.mySwiper {
+  height: 100px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.mySwiper .swiper-slide {
+  width: 150px;
+  height: 100px;
+}
+.swiper-slide img {
+  display: flex;
+  width: 150px;
+  height: 100px;
+}
+/*End Swiper*/
+/*responsive*/
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    display: none !important;
+  }
+  .form-control {
+    display: none !important;
+  }
+}
+/*responsive*/
