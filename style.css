@@ -2,19 +2,69 @@
   padding: 0;
   margin: 0;
 }
-
+.container {
+  width: 100%;
+}
+/*topbar*/
+.topbar-one {
+  background: black;
+}
+.topbar {
+  background: black;
+  color: #f0f0f0;
+  font-size: 14px;
+}
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 15s linear infinite;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.contact-list {
+  gap: 14px;
+  display: flex;
+  justify-content: flex-end;
+}
+/*topbar*/
 /*Navbar*/
 .navbar-nav {
-  color: white;
+  color: black;
 }
+.nav-link {
+  color: black;
+}
+.icon {
+  font-size: 20px;
+}
+/* End Navbar*/
+/* End Navbar*/
 
 /* End Navbar*/
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  width: 100%;
+}
 .product-card {
   position: relative;
   border: 1px solid #eee;
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.2s;
+  text-align: center;
 }
 
 .product-card:hover {
@@ -102,7 +152,19 @@
 /*End third Card Item*/
 
 /*footer*/
+.f-two p:hover{
+  transform: scale(1.05);
+}
+.f-two i:hover{
+  transform: scale(1.05);
+}
+.link p:hover {
+    transform: scale(1.05);
+}
 
+.link p:hover a:hover{
+    transform: scale(1.05);
+}
 /*Quick Links*/
 .btn-dark:hover {
   background: white;
@@ -139,7 +201,7 @@
 }
 /*End Swiper*/
 /*responsive*/
-
+/*mobile*/
 @media (max-width: 576px) {
   .navbar-brand {
     display: none !important;
@@ -147,5 +209,23 @@
   .form-control {
     display: none !important;
   }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 5px;
+    gap: 10px;
+    width: 100%;
+  }
 }
+/*mobile*/
+/*tablet*/
+@media (max-width: 768px) {
+ 
+}
+
+/*tablet*/
+/*desktop*/
+
+/*desktop*/
+
 /*responsive*/

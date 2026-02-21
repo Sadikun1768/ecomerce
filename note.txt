@@ -1,72 +1,70 @@
-<!-----Top Brand section------->
-<div class="container my-5">
-  <div class="header my-5">
-    <h3>Top Brand</h3>
-  </div>
-  <!-- Swiper main container -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="images/sws.webp" /></div>
-      <div class="swiper-slide"><img src="images/swf (2).webp" /></div>
-      <div class="swiper-slide"><img src="images/swf (2).webp" /></div>
-      <div class="swiper-slide"><img src="images/swo.webp" /></div>
-      <div class="swiper-slide"><img src="images/swse.webp" /></div>
-      <div class="swiper-slide"><img src="images/swth.webp" /></div>
-      <div class="swiper-slide"><img src="images/swt.webp" /></div>
-      <div class="swiper-slide"><img src="images/swf.webp" /></div>
-      <div class="swiper-slide"><img src="images/swo.webp" /></div>
+Conversation opened. 1 unread message.
+
+Skip to content
+Using Gmail with screen readers
+1 of 9
+(no subject)
+Inbox
+
+Sathy Islam.
+9:01 AM (31 minutes ago)
+to me
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>waquya</title>
+</head>
+<body>
+    <h1>waquya</h1>
+    <div class="topbar d-flex">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 col-md-8">
+                   
+                   <marquee width="80%">WAQEYA.COM – ওয়াচ, হিজাব, খিমার ও পালাজো ৩ পিস সেট. চাইনিজ ফ্যাশন গেজেট, কিডস টয় ও বেবি কেয়ার আইটেমের বিশ্বস্ত অনলাইন স্টোর | No Advance ❌ | Cash on Delivery ✅
+</marquee>
+                </div>
+               <div class="phone">
+        <span>
+           <i class="fa-brands fa-whatsapp"></i> 01326870225
+         |
+           <i class="fa-solid fa-phone"></i> 01326870225
+        </span>
+   
     </div>
-    <!-- Navigation buttons -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+            </div>
+    <!-- </div><br>
+    <div class="topbar">
+  <div class="topbar-flex">
+
+    <div class="marquee">
+      <marquee>
+        WAQEYA.COM – ওয়াচ, হিজাব, খিমার ও পালাজো ৩ পিস সেট. চাইনিজ ফ্যাশন গেজেট, কিডস টয় ও বেবি কেয়ার আইটেমের বিশ্বস্ত অনলাইন স্টোর | No Advance ❌ | Cash on Delivery ✅
+      </marquee>
+    </div>
+
+    <div class="phone">
+        <span>
+           <i class="fa-brands fa-whatsapp"></i> 01326870225
+         |
+           <i class="fa-solid fa-phone"></i> 01326870225
+        </span>
+   
+    </div>
+
+  </div>
+</div> -->
+
+   
+
   </div>
 </div>
-<!-----End Top Brand section ------->
-
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    loop: true,
-    spaceBetween: 10,
-    slidesPerView: 5,
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-</script>
-
-
-
-
-
-
-
-style.css file:
-
-  /*Swiper*/
-    .mySwiper {
-      height: 100px;
-      box-sizing: border-box;
-      padding: 10px 0;
-    }
-    .mySwiper .swiper-slide {
-      width: 150px;
-      height: 100px;
    
-     
-    }
-    .swiper-slide img {
-      display: flex;
-      width: 150px;
-      height: 100px;
-      
-    }
-        /*End Swiper*/
+</body>
+</html>
