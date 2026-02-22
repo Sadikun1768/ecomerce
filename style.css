@@ -50,9 +50,8 @@
   color: #000;
 }
 /* End Navbar*/
-/* End Navbar*/
 
-/* End Navbar*/
+
 /*.product-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -225,8 +224,10 @@
     align-items: center;
   }
   .form-control {
-    display: none !important;
+   width: 120px;
   }
+ 
+ 
    /*.product-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
