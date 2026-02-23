@@ -220,14 +220,25 @@
 /*mobile*/
 /*tablet*/
 @media (max-width: 768px) {
- .navbar img {
+ /*.navbar img {
     align-items: center;
+  }*/
+  .navbar-toggler .logo img {
+    display: block;
   }
   .form-control {
-   width: 50px;
+   width: 90px;
+   margin-right: 20px;
   }
  
- 
+ .text-white {
+  display: none;
+ }
+ .logo img {
+  width: 70px;
+  align-items: center;
+  justify-content: center;
+ }
    /*.product-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -245,7 +256,29 @@
 
 /*tablet*/
 /*desktop*/
+@media (max-width: 992px) {
+ /*.navbar img {
+    align-items: center;
+  }*/
+  .navbar-toggler .logo img {
+    display: block;
+  }
+  .form-control {
+   width: 90px;
+   margin-right: 20px;
+  }
+  
+ .text-white {
+  display: none;
+ }
 
+ .logo img {
+  width: 70px;
+  align-items: center;
+  justify-content: center;
+ }
+  
+}
 /*desktop*/
 
 @media (min-width: 1200px) {
