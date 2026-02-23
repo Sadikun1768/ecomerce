@@ -49,6 +49,38 @@
   font-size: 20px;
   color: #000;
 }
+/*Search bar*/
+.search-box {
+  position: relative;
+  max-width: 500px;
+}
+.search-box input{
+padding-right: 30px;
+border-radius: 80px;
+height: 40px;
+padding: 15px;
+border: none;
+
+}
+.search-btn {
+  position: absolute;
+  background: black;
+  color: aliceblue;
+  height: 100%;
+  border-radius: 0 20px 20px 0;
+  border: 0;
+  width: 46px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/*Search bar*/
 /* End Navbar*/
 
 
