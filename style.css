@@ -251,6 +251,21 @@ border: none;
     width: 100%;
   }*/
 }
+
+/*our product page*/
+.eye-icon {
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.product-card:hover .eye-icon {
+  opacity: 1;
+  transform: scale(1.5); 
+}
+
+/*our product page*/
+
 /*mobile*/
 /*tablet*/
 @media (max-width: 768px) {
