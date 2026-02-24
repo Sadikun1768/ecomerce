@@ -132,6 +132,8 @@ border: none;
 
 .price {
   font-weight: bold;
+  display: flex;
+  gap: 1rem;
 }
 
 .price .original {
@@ -270,6 +272,7 @@ border: none;
   width: 70px;
   align-items: center;
   justify-content: center;
+
  }
    /*.product-grid {
     display: grid;
