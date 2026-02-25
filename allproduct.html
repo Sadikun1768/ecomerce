@@ -99,7 +99,7 @@
         <i class="fa-solid fa-circle-user"></i>
       </a>
     </div>
-    </div>
+
   </nav>
   <!------End Navbar ------->
 
@@ -117,24 +117,24 @@
           <label for="filterName" class="form-label fw-bold p-2 me-2">Filter By Name</label>
           <button class="btn btn-danger btn-sm">Clear</button>
           <div class="input-group">
-            <input type="text" class="from-control rounded" placeholder="Enter Product Name">
+            <input type="text" class="form-control rounded" placeholder="Enter Product Name">
           </div>
         </div>
 
         <div class="mb-3">
-          <label for="" class="from-control fw-bold">Filter By Price</label>
+          <label for="" class="form-control fw-bold">Filter By Price</label>
           <div class="row g-2">
             <div class="col">
-              <input type="number" class="from-control rounded" placeholder="Min - 0 Tk">
+              <input type="number" class="form-control rounded" placeholder="Min - 0 Tk">
             </div>
             <div class="col">
-              <input type="number" class="from-control rounded" placeholder="Max - 2800 Tk">
+              <input type="number" class="form-control rounded" placeholder="Max - 2800 Tk">
             </div>
           </div>
         </div>
 
         <div class="mb-3">
-          <label for="" class="from-control fw-bold">Price Sorting</label>
+          <label for="" class="form-control fw-bold">Price Sorting</label>
           <select class="form-select" id="">
             <option selected>Default</option>
             <option value="">Low to High</option>
@@ -144,7 +144,7 @@
 
         <div class="mb-3">
           <label for="" class="form-label fw-bold">Filter By Category</label>
-          <input type="text" class="from-control rounded" placeholder="Search Category....">
+          <input type="text" class="form-control rounded" placeholder="Search Category....">
         </div>
 
         <div class="form-check">
@@ -208,344 +208,726 @@
 
       <!-----card----->
       <div class="col-md-10 mb-2">
-
         <div class="row">
           <div class="div">
             <button type="button" class="btn btn-success btn-sm rounded">All Product</button>
           </div>
 
+
           <div class="col-md-3">
 
-            <div class="product-card p-3 my-3" style="width: 15rem">
-              <!-- Badges -->
-              <div class="badge-discount">14% Off</div>
-            
-                <a href="viewproduct.html" class="eye-icon position-absolute start-0 translate-middle-y rounded-circle shadow">
-                  <i class="fa fa-eye"></i>
-                </a>
+            <div class="product-card position-relative p-3 my-3" style="width: 15rem;">
 
-              <img src="images/ca-one.webp" class="img-fluid rounded" alt="Hijab" />
-
-              <div class="rating d-flex justify-content-between">
-                <div class="rating mb-2">★ 0.0 / 5</div>
-                <div class="sold-count fw-bold mb-2">13 Sold</div>
+              <!-- Discount Badge -->
+              <div class="badge bg-danger position-absolute top-0 end-0 m-2">
+                14% Off
               </div>
 
+              <!-- Eye Icon -->
+              <!-- <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#viewModal1">
+                <i class="fa fa-eye"></i>
+              </a> -->
+              <button
+                class="eye-icon position-absolute top-0 start-0 translate-middle-y bg-info rounded-circle p-2 m-3 shadow"
+                data-bs-toggle="modal" data-bs-target="#viewModal1">
+                <i class="fa fa-eye"></i>
+              </button>
+
+
+              <!-- <a href="viewproduct.html"
+                class="eye-icon position-absolute top-0 start-0 translate-middle-y bg-white rounded-circle p-2 m-3 shadow">
+                <i class="fa fa-eye"></i>
+              </a> -->
+
+              <!-- Product Image -->
+              <img src="images/ca-one.webp" class="img-fluid rounded" alt="Hijab">
+
+              <!-- Rating -->
+              <div class="d-flex justify-content-between mt-2">
+                <small>★ 0.0 / 5</small>
+                <small class="fw-bold">13 Sold</small>
+              </div>
+
+              <!-- Product Info -->
               <div class="mt-3">
-                <h6 class="fw-5">
+                <h6 class="fw-bold">
                   WAQEYA Noor Comfort Floral Soft Linen Hijab
                 </h6>
 
                 <p class="text-muted mb-1">SKU: Code 217</p>
 
-                <div class="price d-flex gap-3 mb-3">
-                  <span class="original me-3">999 Tk</span>
-                  <span class="text-success me-3">850 Tk</span>
+                <div class="d-flex gap-2 mb-3">
+                  <span class="text-decoration-line-through text-muted">999 Tk</span>
+                  <span class="text-success fw-bold">850 Tk</span>
                   <span class="badge bg-dark">Save 149</span>
                 </div>
-                <a href="order.html" class="btn btn-order">অর্ডার করুন</a>
+                <!-- 
+                <button class="btn btn-success order-btn" data-bs-toggle="modal" data-bs-target="#orderModal"
+                  data-product="WAQEYA Noor Comfort Floral Soft Linen Hijab" data-price="850 Tk">
+                  অর্ডার করুন
+                </button> -->
 
+                <!-- Order Button -->
+                <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#orderModal1">
+
+                  অর্ডার করুন
+
+                </button>
               </div>
             </div>
+            <div class="product-card position-relative p-3 my-3" style="width: 15rem;">
 
-            <div class="product-card p-3 my-3" style="width: 15rem">
-              <!-- Badges -->
-              <div class="badge-discount">14% Off</div>
-            
-                <a href="viewproduct.html" class="eye-icon position-absolute start-0 translate-middle-y rounded-circle shadow">
-                  <i class="fa fa-eye"></i>
-                </a>
-
-              <img src="images/ca-one.webp" class="img-fluid rounded" alt="Hijab" />
-
-              <div class="rating d-flex justify-content-between">
-                <div class="rating mb-2">★ 0.0 / 5</div>
-                <div class="sold-count fw-bold mb-2">13 Sold</div>
+              <!-- Discount Badge -->
+              <div class="badge bg-danger position-absolute top-0 end-0 m-2">
+                14% Off
               </div>
 
+              <!-- Eye Icon -->
+              <!-- <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#viewModal1">
+                <i class="fa fa-eye"></i>
+              </a> -->
+              <button
+                class="eye-icon position-absolute top-0 start-0 translate-middle-y bg-info rounded-circle p-2 m-3 shadow"
+                data-bs-toggle="modal" data-bs-target="#viewModal1">
+                <i class="fa fa-eye"></i>
+              </button>
+
+
+              <!-- <a href="viewproduct.html"
+                class="eye-icon position-absolute top-0 start-0 translate-middle-y bg-white rounded-circle p-2 m-3 shadow">
+                <i class="fa fa-eye"></i>
+              </a> -->
+
+              <!-- Product Image -->
+              <img src="images/ca-one.webp" class="img-fluid rounded" alt="Hijab">
+
+              <!-- Rating -->
+              <div class="d-flex justify-content-between mt-2">
+                <small>★ 0.0 / 5</small>
+                <small class="fw-bold">13 Sold</small>
+              </div>
+
+              <!-- Product Info -->
               <div class="mt-3">
-                <h6 class="fw-5">
+                <h6 class="fw-bold">
                   WAQEYA Noor Comfort Floral Soft Linen Hijab
                 </h6>
 
                 <p class="text-muted mb-1">SKU: Code 217</p>
 
-                <div class="price d-flex gap-3 mb-3">
-                  <span class="original me-3">999 Tk</span>
-                  <span class="text-success me-3">850 Tk</span>
+                <div class="d-flex gap-2 mb-3">
+                  <span class="text-decoration-line-through text-muted">999 Tk</span>
+                  <span class="text-success fw-bold">850 Tk</span>
                   <span class="badge bg-dark">Save 149</span>
                 </div>
-                <a href="order.html" class="btn btn-order">অর্ডার করুন</a>
+                <!-- 
+                <button class="btn btn-success order-btn" data-bs-toggle="modal" data-bs-target="#orderModal"
+                  data-product="WAQEYA Noor Comfort Floral Soft Linen Hijab" data-price="850 Tk">
+                  অর্ডার করুন
+                </button> -->
 
+                <!-- Order Button -->
+                <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#orderModal1">
+
+                  অর্ডার করুন
+
+                </button>
               </div>
             </div>
-          
+
+
           </div>
 
           <div class="col-md-3">
 
-             <div class="product-card p-3 my-3" style="width: 15rem">
-              <!-- Badges -->
-              <div class="badge-discount">14% Off</div>
-            
-                <a href="viewproduct.html" class="eye-icon position-absolute start-0 translate-middle-y rounded-circle shadow">
-                  <i class="fa fa-eye"></i>
-                </a>
+            <div class="product-card position-relative p-3 my-3" style="width: 15rem;">
 
-              <img src="images/ca-one.webp" class="img-fluid rounded" alt="Hijab" />
-
-              <div class="rating d-flex justify-content-between">
-                <div class="rating mb-2">★ 0.0 / 5</div>
-                <div class="sold-count fw-bold mb-2">13 Sold</div>
+              <!-- Discount Badge -->
+              <div class="badge bg-danger position-absolute top-0 end-0 m-2">
+                14% Off
               </div>
 
+              <!-- Eye Icon -->
+              <!-- <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#viewModal1">
+                <i class="fa fa-eye"></i>
+              </a> -->
+              <button
+                class="eye-icon position-absolute top-0 start-0 translate-middle-y bg-info rounded-circle p-2 m-3 shadow"
+                data-bs-toggle="modal" data-bs-target="#viewModal1">
+                <i class="fa fa-eye"></i>
+              </button>
+
+
+              <!-- <a href="viewproduct.html"
+                class="eye-icon position-absolute top-0 start-0 translate-middle-y bg-white rounded-circle p-2 m-3 shadow">
+                <i class="fa fa-eye"></i>
+              </a> -->
+
+              <!-- Product Image -->
+              <img src="images/ca-one.webp" class="img-fluid rounded" alt="Hijab">
+
+              <!-- Rating -->
+              <div class="d-flex justify-content-between mt-2">
+                <small>★ 0.0 / 5</small>
+                <small class="fw-bold">13 Sold</small>
+              </div>
+
+              <!-- Product Info -->
               <div class="mt-3">
-                <h6 class="fw-5">
+                <h6 class="fw-bold">
                   WAQEYA Noor Comfort Floral Soft Linen Hijab
                 </h6>
 
                 <p class="text-muted mb-1">SKU: Code 217</p>
 
-                <div class="price d-flex gap-3 mb-3">
-                  <span class="original me-3">999 Tk</span>
-                  <span class="text-success me-3">850 Tk</span>
+                <div class="d-flex gap-2 mb-3">
+                  <span class="text-decoration-line-through text-muted">999 Tk</span>
+                  <span class="text-success fw-bold">850 Tk</span>
                   <span class="badge bg-dark">Save 149</span>
                 </div>
-                <a href="order.html" class="btn btn-order">অর্ডার করুন</a>
+                <!-- 
+                <button class="btn btn-success order-btn" data-bs-toggle="modal" data-bs-target="#orderModal"
+                  data-product="WAQEYA Noor Comfort Floral Soft Linen Hijab" data-price="850 Tk">
+                  অর্ডার করুন
+                </button> -->
 
+                <!-- Order Button -->
+                <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#orderModal1">
+
+                  অর্ডার করুন
+
+                </button>
               </div>
             </div>
+            <div class="product-card position-relative p-3 my-3" style="width: 15rem;">
 
-            <div class="product-card p-3 my-3" style="width: 15rem">
-              <!-- Badges -->
-              <div class="badge-discount">14% Off</div>
-            
-                <a href="viewproduct.html" class="eye-icon position-absolute start-0 translate-middle-y rounded-circle shadow">
-                  <i class="fa fa-eye"></i>
-                </a>
-
-              <img src="images/ca-one.webp" class="img-fluid rounded" alt="Hijab" />
-
-              <div class="rating d-flex justify-content-between">
-                <div class="rating mb-2">★ 0.0 / 5</div>
-                <div class="sold-count fw-bold mb-2">13 Sold</div>
+              <!-- Discount Badge -->
+              <div class="badge bg-danger position-absolute top-0 end-0 m-2">
+                14% Off
               </div>
 
+              <!-- Eye Icon -->
+              <!-- <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#viewModal1">
+                <i class="fa fa-eye"></i>
+              </a> -->
+              <button
+                class="eye-icon position-absolute top-0 start-0 translate-middle-y bg-info rounded-circle p-2 m-3 shadow"
+                data-bs-toggle="modal" data-bs-target="#viewModal1">
+                <i class="fa fa-eye"></i>
+              </button>
+
+
+              <!-- <a href="viewproduct.html"
+                class="eye-icon position-absolute top-0 start-0 translate-middle-y bg-white rounded-circle p-2 m-3 shadow">
+                <i class="fa fa-eye"></i>
+              </a> -->
+
+              <!-- Product Image -->
+              <img src="images/ca-one.webp" class="img-fluid rounded" alt="Hijab">
+
+              <!-- Rating -->
+              <div class="d-flex justify-content-between mt-2">
+                <small>★ 0.0 / 5</small>
+                <small class="fw-bold">13 Sold</small>
+              </div>
+
+              <!-- Product Info -->
               <div class="mt-3">
-                <h6 class="fw-5">
+                <h6 class="fw-bold">
                   WAQEYA Noor Comfort Floral Soft Linen Hijab
                 </h6>
 
                 <p class="text-muted mb-1">SKU: Code 217</p>
 
-                <div class="price d-flex gap-3 mb-3">
-                  <span class="original me-3">999 Tk</span>
-                  <span class="text-success me-3">850 Tk</span>
+                <div class="d-flex gap-2 mb-3">
+                  <span class="text-decoration-line-through text-muted">999 Tk</span>
+                  <span class="text-success fw-bold">850 Tk</span>
                   <span class="badge bg-dark">Save 149</span>
                 </div>
-                <a href="order.html" class="btn btn-order">অর্ডার করুন</a>
+                <!-- 
+                <button class="btn btn-success order-btn" data-bs-toggle="modal" data-bs-target="#orderModal"
+                  data-product="WAQEYA Noor Comfort Floral Soft Linen Hijab" data-price="850 Tk">
+                  অর্ডার করুন
+                </button> -->
 
+                <!-- Order Button -->
+                <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#orderModal1">
+
+                  অর্ডার করুন
+
+                </button>
               </div>
             </div>
 
           </div>
 
           <div class="col-md-3">
-             <div class="product-card p-3 my-3" style="width: 15rem">
-              <!-- Badges -->
-              <div class="badge-discount">14% Off</div>
-            
-                <a href="viewproduct.html" class="eye-icon position-absolute start-0 translate-middle-y rounded-circle shadow">
-                  <i class="fa fa-eye"></i>
-                </a>
 
-              <img src="images/ca-one.webp" class="img-fluid rounded" alt="Hijab" />
+            <div class="product-card position-relative p-3 my-3" style="width: 15rem;">
 
-              <div class="rating d-flex justify-content-between">
-                <div class="rating mb-2">★ 0.0 / 5</div>
-                <div class="sold-count fw-bold mb-2">13 Sold</div>
+              <!-- Discount Badge -->
+              <div class="badge bg-danger position-absolute top-0 end-0 m-2">
+                14% Off
               </div>
 
+              <!-- Eye Icon -->
+              <!-- <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#viewModal1">
+                <i class="fa fa-eye"></i>
+              </a> -->
+              <button
+                class="eye-icon position-absolute top-0 start-0 translate-middle-y bg-info rounded-circle p-2 m-3 shadow"
+                data-bs-toggle="modal" data-bs-target="#viewModal1">
+                <i class="fa fa-eye"></i>
+              </button>
+
+
+              <!-- <a href="viewproduct.html"
+                class="eye-icon position-absolute top-0 start-0 translate-middle-y bg-white rounded-circle p-2 m-3 shadow">
+                <i class="fa fa-eye"></i>
+              </a> -->
+
+              <!-- Product Image -->
+              <img src="images/ca-one.webp" class="img-fluid rounded" alt="Hijab">
+
+              <!-- Rating -->
+              <div class="d-flex justify-content-between mt-2">
+                <small>★ 0.0 / 5</small>
+                <small class="fw-bold">13 Sold</small>
+              </div>
+
+              <!-- Product Info -->
               <div class="mt-3">
-                <h6 class="fw-5">
+                <h6 class="fw-bold">
                   WAQEYA Noor Comfort Floral Soft Linen Hijab
                 </h6>
 
                 <p class="text-muted mb-1">SKU: Code 217</p>
 
-                <div class="price d-flex gap-3 mb-3">
-                  <span class="original me-3">999 Tk</span>
-                  <span class="text-success me-3">850 Tk</span>
+                <div class="d-flex gap-2 mb-3">
+                  <span class="text-decoration-line-through text-muted">999 Tk</span>
+                  <span class="text-success fw-bold">850 Tk</span>
                   <span class="badge bg-dark">Save 149</span>
                 </div>
-                <a href="order.html" class="btn btn-order">অর্ডার করুন</a>
+                <!-- 
+                <button class="btn btn-success order-btn" data-bs-toggle="modal" data-bs-target="#orderModal"
+                  data-product="WAQEYA Noor Comfort Floral Soft Linen Hijab" data-price="850 Tk">
+                  অর্ডার করুন
+                </button> -->
 
+                <!-- Order Button -->
+                <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#orderModal1">
+
+                  অর্ডার করুন
+
+                </button>
               </div>
             </div>
+            <div class="product-card position-relative p-3 my-3" style="width: 15rem;">
 
-            <div class="product-card p-3 my-3" style="width: 15rem">
-              <!-- Badges -->
-              <div class="badge-discount">14% Off</div>
-            
-                <a href="viewproduct.html" class="eye-icon position-absolute start-0 translate-middle-y rounded-circle shadow">
-                  <i class="fa fa-eye"></i>
-                </a>
-
-              <img src="images/ca-one.webp" class="img-fluid rounded" alt="Hijab" />
-
-              <div class="rating d-flex justify-content-between">
-                <div class="rating mb-2">★ 0.0 / 5</div>
-                <div class="sold-count fw-bold mb-2">13 Sold</div>
+              <!-- Discount Badge -->
+              <div class="badge bg-danger position-absolute top-0 end-0 m-2">
+                14% Off
               </div>
 
+              <!-- Eye Icon -->
+              <!-- <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#viewModal1">
+                <i class="fa fa-eye"></i>
+              </a> -->
+              <button
+                class="eye-icon position-absolute top-0 start-0 translate-middle-y bg-info rounded-circle p-2 m-3 shadow"
+                data-bs-toggle="modal" data-bs-target="#viewModal1">
+                <i class="fa fa-eye"></i>
+              </button>
+
+
+              <!-- <a href="viewproduct.html"
+                class="eye-icon position-absolute top-0 start-0 translate-middle-y bg-white rounded-circle p-2 m-3 shadow">
+                <i class="fa fa-eye"></i>
+              </a> -->
+
+              <!-- Product Image -->
+              <img src="images/ca-one.webp" class="img-fluid rounded" alt="Hijab">
+
+              <!-- Rating -->
+              <div class="d-flex justify-content-between mt-2">
+                <small>★ 0.0 / 5</small>
+                <small class="fw-bold">13 Sold</small>
+              </div>
+
+              <!-- Product Info -->
               <div class="mt-3">
-                <h6 class="fw-5">
+                <h6 class="fw-bold">
                   WAQEYA Noor Comfort Floral Soft Linen Hijab
                 </h6>
 
                 <p class="text-muted mb-1">SKU: Code 217</p>
 
-                <div class="price d-flex gap-3 mb-3">
-                  <span class="original me-3">999 Tk</span>
-                  <span class="text-success me-3">850 Tk</span>
+                <div class="d-flex gap-2 mb-3">
+                  <span class="text-decoration-line-through text-muted">999 Tk</span>
+                  <span class="text-success fw-bold">850 Tk</span>
                   <span class="badge bg-dark">Save 149</span>
                 </div>
-                <a href="order.html" class="btn btn-order">অর্ডার করুন</a>
+                <!-- 
+                <button class="btn btn-success order-btn" data-bs-toggle="modal" data-bs-target="#orderModal"
+                  data-product="WAQEYA Noor Comfort Floral Soft Linen Hijab" data-price="850 Tk">
+                  অর্ডার করুন
+                </button> -->
 
+                <!-- Order Button -->
+                <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#orderModal1">
+
+                  অর্ডার করুন
+
+                </button>
               </div>
             </div>
 
           </div>
+
           <div class="col-md-3">
 
-             <div class="product-card p-3 my-3" style="width: 15rem">
-              <!-- Badges -->
-              <div class="badge-discount">14% Off</div>
-            
-                <a href="viewproduct.html" class="eye-icon position-absolute start-0 translate-middle-y rounded-circle shadow">
-                  <i class="fa fa-eye"></i>
-                </a>
+            <div class="product-card position-relative p-3 my-3" style="width: 15rem;">
 
-              <img src="images/ca-one.webp" class="img-fluid rounded" alt="Hijab" />
-
-              <div class="rating d-flex justify-content-between">
-                <div class="rating mb-2">★ 0.0 / 5</div>
-                <div class="sold-count fw-bold mb-2">13 Sold</div>
+              <!-- Discount Badge -->
+              <div class="badge bg-danger position-absolute top-0 end-0 m-2">
+                14% Off
               </div>
 
+              <!-- Eye Icon -->
+              <!-- <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#viewModal1">
+                <i class="fa fa-eye"></i>
+              </a> -->
+              <button
+                class="eye-icon position-absolute top-0 start-0 translate-middle-y bg-info rounded-circle p-2 m-3 shadow"
+                data-bs-toggle="modal" data-bs-target="#viewModal1">
+                <i class="fa fa-eye"></i>
+              </button>
+
+
+              <!-- <a href="viewproduct.html"
+                class="eye-icon position-absolute top-0 start-0 translate-middle-y bg-white rounded-circle p-2 m-3 shadow">
+                <i class="fa fa-eye"></i>
+              </a> -->
+
+              <!-- Product Image -->
+              <img src="images/ca-one.webp" class="img-fluid rounded" alt="Hijab">
+
+              <!-- Rating -->
+              <div class="d-flex justify-content-between mt-2">
+                <small>★ 0.0 / 5</small>
+                <small class="fw-bold">13 Sold</small>
+              </div>
+
+              <!-- Product Info -->
               <div class="mt-3">
-                <h6 class="fw-5">
+                <h6 class="fw-bold">
                   WAQEYA Noor Comfort Floral Soft Linen Hijab
                 </h6>
 
                 <p class="text-muted mb-1">SKU: Code 217</p>
 
-                <div class="price d-flex gap-3 mb-3">
-                  <span class="original me-3">999 Tk</span>
-                  <span class="text-success me-3">850 Tk</span>
+                <div class="d-flex gap-2 mb-3">
+                  <span class="text-decoration-line-through text-muted">999 Tk</span>
+                  <span class="text-success fw-bold">850 Tk</span>
                   <span class="badge bg-dark">Save 149</span>
                 </div>
-                <a href="order.html" class="btn btn-order">অর্ডার করুন</a>
+                <!-- 
+                <button class="btn btn-success order-btn" data-bs-toggle="modal" data-bs-target="#orderModal"
+                  data-product="WAQEYA Noor Comfort Floral Soft Linen Hijab" data-price="850 Tk">
+                  অর্ডার করুন
+                </button> -->
 
+                <!-- Order Button -->
+                <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#orderModal1">
+
+                  অর্ডার করুন
+
+                </button>
               </div>
             </div>
+            <div class="product-card position-relative p-3 my-3" style="width: 15rem;">
 
-            <div class="product-card p-3 my-3" style="width: 15rem">
-              <!-- Badges -->
-              <div class="badge-discount">14% Off</div>
-            
-                <a href="viewproduct.html" class="eye-icon position-absolute start-0 translate-middle-y rounded-circle shadow">
-                  <i class="fa fa-eye"></i>
-                </a>
-
-              <img src="images/ca-one.webp" class="img-fluid rounded" alt="Hijab" />
-
-              <div class="rating d-flex justify-content-between">
-                <div class="rating mb-2">★ 0.0 / 5</div>
-                <div class="sold-count fw-bold mb-2">13 Sold</div>
+              <!-- Discount Badge -->
+              <div class="badge bg-danger position-absolute top-0 end-0 m-2">
+                14% Off
               </div>
 
+              <!-- Eye Icon -->
+              <!-- <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#viewModal1">
+                <i class="fa fa-eye"></i>
+              </a> -->
+              <button
+                class="eye-icon position-absolute top-0 start-0 translate-middle-y bg-info rounded-circle p-2 m-3 shadow"
+                data-bs-toggle="modal" data-bs-target="#viewModal1">
+                <i class="fa fa-eye"></i>
+              </button>
+
+
+              <!-- <a href="viewproduct.html"
+                class="eye-icon position-absolute top-0 start-0 translate-middle-y bg-white rounded-circle p-2 m-3 shadow">
+                <i class="fa fa-eye"></i>
+              </a> -->
+
+              <!-- Product Image -->
+              <img src="images/ca-one.webp" class="img-fluid rounded" alt="Hijab">
+
+              <!-- Rating -->
+              <div class="d-flex justify-content-between mt-2">
+                <small>★ 0.0 / 5</small>
+                <small class="fw-bold">13 Sold</small>
+              </div>
+
+              <!-- Product Info -->
               <div class="mt-3">
-                <h6 class="fw-5">
+                <h6 class="fw-bold">
                   WAQEYA Noor Comfort Floral Soft Linen Hijab
                 </h6>
 
                 <p class="text-muted mb-1">SKU: Code 217</p>
 
-                <div class="price d-flex gap-3 mb-3">
-                  <span class="original me-3">999 Tk</span>
-                  <span class="text-success me-3">850 Tk</span>
+                <div class="d-flex gap-2 mb-3">
+                  <span class="text-decoration-line-through text-muted">999 Tk</span>
+                  <span class="text-success fw-bold">850 Tk</span>
                   <span class="badge bg-dark">Save 149</span>
                 </div>
-                <a href="order.html" class="btn btn-order">অর্ডার করুন</a>
+                <!-- 
+                <button class="btn btn-success order-btn" data-bs-toggle="modal" data-bs-target="#orderModal"
+                  data-product="WAQEYA Noor Comfort Floral Soft Linen Hijab" data-price="850 Tk">
+                  অর্ডার করুন
+                </button> -->
 
+                <!-- Order Button -->
+                <button class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#orderModal1">
+
+                  অর্ডার করুন
+
+                </button>
               </div>
             </div>
 
           </div>
+
+
+
 
         </div>
-
       </div>
-    </div>
-  </div>
-  <!-----End third  Card Item ------->
-  <!----- Our All Product------->
 
+      <!--view icon Modal -->
+      <div class="modal fade" id="viewModal1" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Product View</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="images/ca-one.webp" class="img-fluid rounded" alt="Hijab">
+                  </div>
+                  <div class="col-md-6">
+                    <p class="fw-bold">WAQEYA Noor Comfort Floral Soft Linen Hijab</p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked p-1"></span>
+                    <span class="bg-danger rounded p-1">12 Sold</span>
+                    <div class="text">
+                      <p>Category:</p>
+                      <p>Brand : Naviforce</p>
+                      <p>Sku CODE : 007</p>
+                      <div class="te g-2 mb-2">
+                        <span class="text-muted text-decoration-line-through p-1">999 Tk</span>
+                        <span class="fw-bold p-1">850 Tk</span>
+                        <span><button class="bg-dark text-light rounded p-2">Save 149</button></span>
+                      </div>
+                      <div class="d-flex gap-2 p-3 mt-2">
+                        <span>
+                          <button type="button" class="btn btn-primary btn-sm">Add Cart</button>
+                        </span>
+                        <span><button type="button" class="btn btn-success btn-sm">Order Now</button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
+              </div>
 
-
-  <!-----End Top Brand section ------->
-
-  <!----Footer ------->
-  <div class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="images/waqeya.webp" alt="" />
-          <p>
-            WAQEYA.COM একটি ট্রাস্টেড ও কোয়ালিটি-ফোকাস অনলাইন ওয়াচ এবং বিভিন্ন
-            চাইনিজ ফ্যাশন গেজেট কিডস টয় বেবি কেয়ার আইটেম ইত্যাদি প্রোডাক্ট
-            স্টোর। আমাদের কাছ থেকে কেনাকাটা করার আগে নিচের নীতিমালাগুলো
-            ভালোভাবে পড়ে নিন।
-          </p>
-          <div class="icon text-success d-flex gap-3">
-            <a href="javascript:void(0)"><i class="fa-brands fa-facebook fs-4"></i></a>
-            <a href="javascript:void(0)"><i class="fa-solid fa-message fs-4"></i></a>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-md-3">
-          <h6 class="fw-bold">Contact Us</h6>
-          <p><i class="fa-solid fa-phone me-2"></i> 01326870225</p>
-          <p>
-            <i class="fa-solid fa-envelope me-2"></i> waqeyashop@gmail.com
-          </p>
-          <p>
-            <i class="fa-solid fa-location-dot me-2"></i> Mirpur -2 Dhaka,
-            Bangladesh
-          </p>
-          <p>
-            <i class="fa-brands fa-whatsapp text-success me-2"></i> WhatsApp
-            Us
-          </p>
-        </div>
+      <!--view icon Modal -->
+      <!--button Modal -->
+      <div class="modal fade" id="orderModal1" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
 
-        <div class="col-md-3">
-          <h6 class="fw-bold">Quick Links</h6>
-          <button class="btn btn-dark">Order Tracking</button>
-          <div class="link">
-            <p><a href="#"></a>Shipping Policy</p>
-            <p><a href="#"></a>Returns & Refunds Policy</p>
-            <p><a href="#"></a>Warranty Policy</p>
-            <p><a href="#"></a>Order Policy</p>
-            <p><a href="#"></a>Our Mission</p>
-            <p><a href="#"></a>Our Vision</p>
-            <p><a href="#"></a>Privacy & Policy</p>
-            <p><a href="#"></a>Terms & Conditions</p>
+            <!--Modal Body -->
+
+            <div class="modal-body">
+              <div class="checkout-container">
+
+                <div class="checkout-header">
+                  <h6 class="bg-dark text-light p-2">অর্ডার করতে চাইলে আপনার নাম,মোবাইল,ঠিকানা দিয়ে অর্ডার কনফার্ম
+                    বাটনে
+                    ক্লিক করুন।।</h6>
+                </div>
+                <div class="customer-form">
+                  <div class="form-group">
+
+                    <div class="position-relative mb-2">
+                      <span class="position-absolute top-50 start-0 translate-middle-y ms-2">👤</span>
+                      <input type="text" class="form-control ps-5" placeholder="আপনার নাম লিখুন.....">
+                    </div>
+                    <div class="position-relative mb-2">
+                      <span class="position-absolute top-50 start-0 translate-middle-y ms-2">📞</span>
+                      <input type="text" class="form-control ps-5" placeholder="এখানে মোবাইল নম্বর লিখুন.....">
+                    </div>
+                    <div class="position-relative mb-2">
+                      <span class="position-absolute top-50 start-0 translate-middle-y ms-2"></span>
+                      <textarea class="form-control" placeholder="সম্পূর্ণ ঠিকানা লিখুন (থানা ও জেলা সহ)"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <!--form -->
+
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>IMAGE</th>
+                      <th>PRODUCT INFORMATION</th>
+                      <th>DELETE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><img src="images/ca-one.webp" style="width: 50px;" alt=""></td>
+                      <td>
+                        <p>Soft Lion Hijab</p>
+                        <span class="text-success">(16000.00 TK)</span><br><br>
+                        <button type="button" class="bg-dark text-light">+</button>
+                        <span>1</span>
+                        <button type="button" class="bg-dark text-light">-</button>
+
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-danger btn-sm text-center">DELETE</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/ca-one.webp" style="width: 50px;" alt=""></td>
+                      <td>
+                        <p>লাক্সারি আবায়া সেট (নিকাবসহ)</p>
+                        <span class="text-success">(19000.00 TK)</span><br><br>
+                        <button type="button" class="bg-dark text-light">+</button>
+                        <span>1</span>
+                        <button type="button" class="bg-dark text-light">-</button>
+
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-danger btn-sm text-center">DELETE</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/ca-one.webp" style="width: 50px;" alt=""></td>
+                      <td>
+                        <p>Bloom Printkari 100% Cotton</p>
+                        <span class="text-success">(10000.00 TK)</span><br><br>
+                        <button type="button" class="bg-dark text-light">+</button>
+                        <span>1</span>
+                        <button type="button" class="bg-dark text-light">-</button>
+
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-danger btn-sm text-center">DELETE</button>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+
+                <!--form -->
+
+
+              </div>
+            </div>
+
+            <!--Modal Body -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                বন্ধ করুন
+              </button>
+
+              <button type="button" class="btn btn-success">
+                Confirm Order
+              </button>
+            </div>
+
           </div>
+        </div>
+      </div>
+      <!--button Modal -->
+      <!-----End third  Card Item ------->
+      <!----- Our All Product------->
 
-          <!-- <ul>
+
+
+
+      <!-----End Top Brand section ------->
+
+      <!----Footer ------->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="images/waqeya.webp" alt="" />
+              <p>
+                WAQEYA.COM একটি ট্রাস্টেড ও কোয়ালিটি-ফোকাস অনলাইন ওয়াচ এবং বিভিন্ন
+                চাইনিজ ফ্যাশন গেজেট কিডস টয় বেবি কেয়ার আইটেম ইত্যাদি প্রোডাক্ট
+                স্টোর। আমাদের কাছ থেকে কেনাকাটা করার আগে নিচের নীতিমালাগুলো
+                ভালোভাবে পড়ে নিন।
+              </p>
+              <div class="icon text-success d-flex gap-3">
+                <a href="javascript:void(0)"><i class="fa-brands fa-facebook fs-4"></i></a>
+                <a href="javascript:void(0)"><i class="fa-solid fa-message fs-4"></i></a>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <h6 class="fw-bold">Contact Us</h6>
+              <p><i class="fa-solid fa-phone me-2"></i> 01326870225</p>
+              <p>
+                <i class="fa-solid fa-envelope me-2"></i> waqeyashop@gmail.com
+              </p>
+              <p>
+                <i class="fa-solid fa-location-dot me-2"></i> Mirpur -2 Dhaka,
+                Bangladesh
+              </p>
+              <p>
+                <i class="fa-brands fa-whatsapp text-success me-2"></i> WhatsApp
+                Us
+              </p>
+            </div>
+
+            <div class="col-md-3">
+              <h6 class="fw-bold">Quick Links</h6>
+              <button class="btn btn-dark">Order Tracking</button>
+              <div class="link">
+                <p><a href="#"></a>Shipping Policy</p>
+                <p><a href="#"></a>Returns & Refunds Policy</p>
+                <p><a href="#"></a>Warranty Policy</p>
+                <p><a href="#"></a>Order Policy</p>
+                <p><a href="#"></a>Our Mission</p>
+                <p><a href="#"></a>Our Vision</p>
+                <p><a href="#"></a>Privacy & Policy</p>
+                <p><a href="#"></a>Terms & Conditions</p>
+              </div>
+
+              <!-- <ul>
               <li><a href="#"></a>Shipping Policy</li>
               <li><a href="#"></a>Returns & Refunds Policy</li>
               <li><a href="#"></a>Warranty Policy</li>
@@ -555,35 +937,35 @@
               <li><a href="#"></a>Privacy & Policy</li>
               <li><a href="#"></a>Terms & Conditions</li>
             </ul> -->
-        </div>
-
-        <div class="col-md-2">
-          <h6 class="fw-bold">Let's Connect</h6>
-          <a href="#" class="btn btn-dark">Join Our Facebook</a>
-          <div class="mt-3">
-            <div>
-              <img src="images/imgw.jpg" alt="" />
-
-              <p>WAQEYA</p>
             </div>
-            <a href="#" class="btn btn-outline-success"><i class="fa-brands fa-facebook"></i>Follow Page</a>
+
+            <div class="col-md-2">
+              <h6 class="fw-bold">Let's Connect</h6>
+              <a href="#" class="btn btn-dark">Join Our Facebook</a>
+              <div class="mt-3">
+                <div>
+                  <img src="images/imgw.jpg" alt="" />
+
+                  <p>WAQEYA</p>
+                </div>
+                <a href="#" class="btn btn-outline-success"><i class="fa-brands fa-facebook"></i>Follow Page</a>
+              </div>
+            </div>
           </div>
+
+        </div>
+        <div class="text-bg-dark text-center fs-6">
+          <a href="javascript:void(0)">© 2026 WAQEYA | Developed By Service Key.</a>
         </div>
       </div>
+      <!-----End Footer------->
 
-    </div>
-    <div class="text-bg-dark text-center fs-6">
-      <a href="javascript:void(0)">© 2026 WAQEYA | Developed By Service Key.</a>
-    </div>
-  </div>
-  <!-----End Footer------->
+      <script>
 
+      </script>
 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
