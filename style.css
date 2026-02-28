@@ -284,7 +284,7 @@ border: none;
   display: none;
  }
  .logo img {
-  width: 70px;
+   width: 50px;
   align-items: center;
   justify-content: center;
 
@@ -323,9 +323,10 @@ border: none;
  }
 
  .logo img {
-  width: 70px;
+  width: 50px;
   align-items: center;
   justify-content: center;
+ 
  }
   
 }
